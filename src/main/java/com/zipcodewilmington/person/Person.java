@@ -13,15 +13,8 @@ public class Person {
 //    private String city;
 
 
-//    public Person(String name, int age, int height,String favFood, boolean maritalStatus, int numberOfKids, String city){
+
     public Person(){
-        name =  this.name;
-       age = this.age;
-//        this.height = height;
-//        this.favFood = favFood;
-//        this.maritalStatus = maritalStatus;
-//        this.numberOfKids = numberOfKids;
-//        this.city = city;
     }
 
 
@@ -48,10 +41,10 @@ public class Person {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public Integer getAge() {
-        return age;
+        return this.age;
     }
 }

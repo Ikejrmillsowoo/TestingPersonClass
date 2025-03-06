@@ -23,6 +23,12 @@ public class Person {
         this.age = age;
     }
 
+   public Person(String name, int age, int height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+
     public Person(String name) {
         this.name = name;
     }
@@ -38,7 +44,7 @@ public class Person {
         this.height = height;
         this.favFood = favFood;
         this.maritalStatus = maritalStatus;
-        this. numberOfKids = numberOfKids;
+        this.numberOfKids = numberOfKids;
         this.city = city;
     }
 

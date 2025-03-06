@@ -53,6 +53,25 @@ public class TestPerson {
     }
 
     @Test
+    public void testConstructorWithNameAgeAndHeight() {
+        // Given
+        String expectedName = "Fred";
+        Integer expectedAge = 30;
+        Integer expectedHeight = 42;
+
+        // When
+        Person person = new Person(expectedName,expectedAge,expectedHeight);
+
+        // Then
+        String actualName =  person.getName();
+        Integer actualAge =  person.getAge();
+        Integer actualHeight =  person.getHeight();
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedHeight, actualHeight);
+    }
+
+    @Test
     public void testConstructorWithAge() {
         // Given
         Integer expected = 5;
